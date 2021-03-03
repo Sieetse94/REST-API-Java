@@ -1,0 +1,9 @@
+{
+    "name": "Jan Pet",
+    "ref": "123",
+    "iban": "NL11RABO00001234123",
+    "startBalance": "1000",
+    "mutation": "500",
+    "description": "Cash Money in the Bank",
+    "endBalance": "1500"
+}
