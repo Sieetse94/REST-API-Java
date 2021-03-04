@@ -35,22 +35,31 @@ public class App extends HttpServlet{
 
         // Set the outputstream and respond based on validation
         ServletOutputStream outputStream = res.getOutputStream();
-        Response response;
 
         if (refValidated == true && endBalanceValidated == true) {
             res.setStatus(HttpServletResponse.SC_OK);
             String result = "SUCCESFUL";
-            response = createResponse(result, reference, accountNumber);
-            outputStream.println("SUCCESFUL");
+            Response response = createResponse(result, reference, accountNumber);
+            String output = objectMapper.writeValueAsString(response);
+            outputStream.println(output);
         } else if (refValidated == false && endBalanceValidated == false) {
             res.setStatus(HttpServletResponse.SC_OK);
-            outputStream.println("DUPLICATE_REFERENCE_INCORRECT_END_BALANCE");
+            String result = "DUPLICATE_REFERENCE_INCORRECT_END_BALANCE";
+            Response response = createResponse(result, reference, accountNumber);
+            String output = objectMapper.writeValueAsString(response);
+            outputStream.println(output);
         } else if (refValidated == false) {
             res.setStatus(HttpServletResponse.SC_OK);
-            outputStream.println("DUPLICATE_REFERENCE");
+            String result = "DUPLICATE_REFERENCE";
+            Response response = createResponse(result, reference, accountNumber);
+            String output = objectMapper.writeValueAsString(response);
+            outputStream.println(output);
         } else if (endBalanceValidated == false) {
             res.setStatus(HttpServletResponse.SC_OK);
-            outputStream.println("INCORRECT_END_BALANCE");
+            String result = "INCORRECT_END_BALANCE";
+            Response response = createResponse(result, reference, accountNumber);
+            String output = objectMapper.writeValueAsString(response);
+            outputStream.println(output);
         } else {
             res.setStatus(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
             outputStream.println("INTERNAL_SERVER_ERROR"); 
@@ -154,7 +163,7 @@ public class App extends HttpServlet{
             record.setAccountNumber(accountNumber);
             record.setReference(reference);
             response.addRecord(record);
-            if (response.result.equals("DUPLICATE_REFERENCE_INCORRECT_END_BALANCE") {
+            if (response.result.equals("DUPLICATE_REFERENCE_INCORRECT_END_BALANCE")) {
                 response.addRecord(record);
             }
             return response;
