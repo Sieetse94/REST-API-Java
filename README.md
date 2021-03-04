@@ -26,9 +26,9 @@ After fiddling around a lot, the basics of the API are working. I have created s
 - Validation of endbalance
 - HTTP Status Code + Response message
 - Tested using Postman
+- Proper formatting of response (JSON with result message and errorrecords)
 
 # TODO:
-- Proper formatting of response (JSON with result message and errorrecords)
 - Clean up formatting and code
 - Write unit tests in Junit
 - Write integration tests 
