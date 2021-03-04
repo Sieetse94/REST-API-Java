@@ -19,5 +19,6 @@ Assignment: create a REST api in Java
 
 **TODO:**
 - Proper formatting of response (JSON with result message and errorrecords)
+- Clean up formatting and code
 - Write unit tests in Junit
--W rite integration tests 
+- Write integration tests 
