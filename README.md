@@ -14,7 +14,7 @@ Basic REST Api to receive POST requests
 JSON parser
 Validation of references
 Validation of endbalance
-HTTP Status Code + Response message 
+HTTP Status Code + Response message
 Tested using Postman
 
 TODO:
