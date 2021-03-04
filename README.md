@@ -1,7 +1,7 @@
 # REST-API-Java
 
 # **Description:**
-After fiddling around a lot, the basics of the API are working. First time working with Maven, first time in months writing in Java. Still need to implement the proper JSON formatted response.
+After fiddling around a lot, the basics of the API are working. I have created some Backend API's lately using Node.JS (MEAN Stack Web-App), so I know what to do. However, it is my first time working with Maven and first time in months writing in Java, so the setup and getting back into Java took some time. Still need to implement the proper JSON formatted response. After that dividing up the classes and methods into more files so the code is cleaner and adding comments where necessary. I haven't (ever) implemented testing yet, so that will take longer. 
 
 
 # Usage Guide 
