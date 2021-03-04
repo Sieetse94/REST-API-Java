@@ -10,15 +10,15 @@ Assignment: create a REST api in Java
 > (medior) Integration test should be implemented
 
 **DONE:**
-Servlet using Jetty
-Basic REST Api to receive POST requests
-JSON parser
-Validation of references
-Validation of endbalance
-HTTP Status Code + Response message
-Tested using Postman
+	Servlet using Jetty
+	Basic REST Api to receive POST requests
+	JSON parser
+	Validation of references
+	Validation of endbalance
+	HTTP Status Code + Response message
+	Tested using Postman
 
 **TODO:**
-Proper formatting of response (JSON with result message and errorrecords)
-Write unit tests in Junit
-Write integration tests
+	Proper formatting of response (JSON with result message and errorrecords) \n
+	Write unit tests in Junit \n
+	Write integration tests \n
